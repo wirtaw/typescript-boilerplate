@@ -1,37 +1,64 @@
-## Skeleton for Node.js applications written in TypeScript
+# TypeScript Boilerplate
 
-### Development
+A minimal TypeScript boilerplate project with modern ESLint configuration, optimized for VSCode and Linux Fedora environments.
 
-```bash
-npm run dev
-```
+## Features
 
-### Running tests
+* **TypeScript Setup:** Pre-configured `tsconfig.json` for optimal TypeScript compilation.
+* **Modern ESLint:** Uses `eslint.config.mjs` with `@typescript-eslint/parser` and `@typescript-eslint/eslint-plugin` for robust linting.
+* **VSCode Integration:** Recommended VSCode settings and extensions for a smooth development experience.
+* **Linux Fedora Optimized:** Considerations for Fedora-specific configurations.
+* **Clean Directory Structure:** Organized `src` and `dist` directories.
 
-```bash
-npm test
-```
+## Getting Started
 
-### Linting
+1.  **Clone the repository:**
 
-```bash
-npm run lint
-```
+    ```bash
+    git clone [repository-url]
+    cd typescript-boilerplate
+    ```
 
-### Formatting
+2.  **Install dependencies:**
 
-```bash
-npm run format
-```
+    ```bash
+    npm install
+    ```
 
-### Knip
+3.  **Build the project:**
 
-```bash
-npm run knip
-```
+    ```bash
+    npm run build
+    ```
 
-### Run
+4.  **Run the project:**
 
-```bash
-npm run start
-```
+    ```bash
+    npm run start
+    ```
+
+5.  **Lint the project:**
+
+    ```bash
+    npm run lint
+    ```
+
+## VSCode Configuration
+
+* Install the recommended extensions:
+    * TypeScript and JavaScript Language Features (built-in)
+    * ESLint
+    * Prettier - Code formatter
+
+## Fedora Considerations
+
+* Ensure Node.js and npm are installed correctly using `dnf`.
+* Verify file permissions, especially when installing global npm packages.
+
+## Contributing
+
+Feel free to contribute by submitting pull requests or opening issues.
+
+## License
+
+MIT
