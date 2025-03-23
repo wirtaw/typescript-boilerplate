@@ -7,16 +7,19 @@
     "dev": "tsc --watch & nodemon dist",
     "start": "npm run build && node ./dist/index.js",
     "knip": "knip -c ./knip.json",
-    "format": "prettier --write \"src/**/*.{js,ts,json}\"",
+    "format": "prettier --write \"src/**/*.{js,mjs,ts,json}\"",
     "lint": "eslint .",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "copy-project": "node ./bin/copy-project.mjs"
+  },
+  "bin": {
+    "create-ts-project": "./bin/copy-project.mjs"
   },
   "keywords": [
     "typescript",
     "boilerplate",
     "eslint",
-    "vscode",
-    "fedora"
+    "vscode"
   ],
   "author": "Vladimir Poplavskij<float45@gmail.com>",
   "license": "MIT",
