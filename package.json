@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
+    "prebuild": "npm run format && npm run lint && npm run knip",
     "build": "tsc",
     "dev": "tsc --watch & nodemon dist",
-    "start": "npm run build && node ./dist/index.js",
+    "prestart": "npm run build",
+    "start": "node ./dist/index.js",
     "knip": "knip -c ./knip.json",
     "format": "prettier --write \"src/**/*.{js,mjs,ts,json}\"",
     "lint": "eslint .",
